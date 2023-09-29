@@ -1,0 +1,264 @@
+﻿@model IEnumerable<FrontEnd.Models.TbArticulosViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@*<script>
+    function prueba(){alert("Prueba");}
+
+    function crearnotificacion() {
+        var mensaje = document.getElementById("datos").innerHTML; // trae la info del Div
+        let newText = mensaje.replace(/<div>/g,"");
+        newText = newText.replace(/<\/div>/g,"");
+        //alert(newText);
+        ncargarnotificacion(newText);
+    }
+
+    function ncargarnotificacion(mensaje){
+        let notificaciones = mensaje;
+        const misnotificaciones = notificaciones.split("|");
+
+        alert(misnotificaciones.legth);
+
+    }
+
+
+
+
+
+
+    function cargaNotificacion(mensaje) {
+
+        let notificaciones = mensaje;
+
+        const misnotificaciones = notificaciones.split("|");
+
+
+        //validar que exist una notificación.
+        if (misnotificaciones.legth == 0) {
+            return;
+        }
+
+
+        //carga de variables
+        let salida1 = "";
+        let salida2 = "";
+        var cantidad = misnotificaciones.legth; // para que cargue la cantidad que se tengan registradas
+
+
+
+        for (var i = 0; i < misnotificaciones.legth; i++) {
+            let noti = misnotificaciones[i];
+
+            const noti2 = noti.split("-");//
+
+            if (noti2.legth == 0) {
+                break;
+            }
+
+            salida1 = salida1 +
+
+                " <a class=\"dropdown-item\" href=\"#\">" +
+                "<div class=\"d-flex align-items-center\">" +
+                "<div class=\"notification-box\"><i class=\"bi bi-basket2-fill\"></i></div > " +
+                "<div class=\"ms-3 flex-grow-1\">" +
+                "<h6 class=\"mb-0 dropdown-msg-user\">" + noti2[0] + "<span class=\"msg-time float-end text-secondary\">1 m</span></h6>" +
+                "<small class=\"mb-0 dropdown-msg-text text-secondary d-flex align-items-center\">" + noti2[1] + "</small>" +
+                " </div>" +
+                " </div>" +
+                "</a>"; //un br por aquello
+        }
+
+
+        salida2 = "<a class=\"nav-link dropdown-toggle dropdown-toggle-nocaret\" href=\"#\" data-bs-toggle=\"dropdown\">" +
+            "<div class=\"notifications\">" +
+            "<span class=\"notify-badge\">" + cantidad + "</span>" +
+            "<i class=\"bi bi-bell-fill\"></i>" +
+            "</div>" +
+            "</a>" +
+
+
+            "<div class=\"dropdown-menu dropdown-menu-end p-0\">" +
+            " <div class=\"p-2 border-bottom m-2\">" +
+            "<h5 class=\"h5 mb-0\">Notificaciones</h5>" +
+            "</div>"
+        "<div class=\"header-notifications-list p-2\">" +
+
+            "<div class=\"dropdown-item bg-light radius-10 mb-1\">" +
+            "<form class=\"dropdown-searchbar position-relative\">" +
+            " <div class=\"position-absolute top-50 start-0 translate-middle-y px-3 search-icon\"><i class=\"bi bi-search\"></i></div>" +
+            "<input class=\"form-control\" type=\"search\" placeholder=\"Buscar Mensajes\">" +
+            "</form>" +
+            "</div>" +
+            salida1 + //agregando las notificaciones
+            " </div>" +
+            "<div class=\"p-2\">" +
+            " <div><hr class=\"dropdown-divider\"></div>" +
+            " <a class=\"dropdown-item\" href=\"#\">" +
+            "<div class=\"text-center\">Ver Todas Las Notificaciones</div>" +
+            "</a>" +
+            "</div>" +
+            "</div>";
+
+        document.getElementById("mensajes").innerHTML = salida2;
+    }
+
+
+
+</script>*@
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Gestión</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-box-seam"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Artículos</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--end breadcrumb-->
+
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <!--Inicio tarjeta-->
+        <div class="card">
+            <h6 class="card-header mb-0 text-uppercase">Detalle Artículos</h6>
+            <div class="card-body">
+                <div class="data_table table-responsive">
+                    <p>
+                        <a asp-action="Create"><button class="btn btn-success">Crear Artículo</button></a>
+                    </p>
+                    <table id="dataTable" class="table table-striped" table-bordered>
+                        <thead class="table-dark">
+                            <tr>
+@*                                <th>
+                                    @Html.DisplayNameFor(model => model.IdArticulo)
+                                </th>*@
+                                <th>
+                                    @Html.DisplayNameFor(model => model.NombreArticulo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Descripcion)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Cantidad)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CostoArticulo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PuntoReorden)
+                                </th>
+                                @*<th>
+                                    @Html.DisplayNameFor(model => model.NumPlaca)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.NumParte)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.NumSerie)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.VidaUtil)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.FechaFinGarantia)
+                                </th>*@
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Idproveedor)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Activo)
+                                </th>
+                                <th>Observaciones</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+@*                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IdArticulo)
+                                    </td>*@
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.NombreArticulo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Descripcion)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Cantidad)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CostoArticulo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PuntoReorden)
+                                    </td>
+                                    @*<td>
+                                        @Html.DisplayFor(modelItem => item.NumPlaca)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.NumParte)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.NumSerie)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.VidaUtil)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FechaFinGarantia)
+                                   </td>*@
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TbProveedor.NombreProveedor)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Activo)
+                                    </td>
+                                    <td>
+                                        @if (item.Cantidad < item.PuntoReorden)
+                                        {
+                                            <p style="background-color:#ea1a1a;color:White;">Stock bajo. Realizar pedido</p>
+                                        }
+                                        else if (item.Cantidad == item.PuntoReorden)
+                                        {
+                                            <p style="background-color:#ffe65d;color:Red;">Stock mínimo alcanzado</p>
+                                        }
+                                        else
+                                        {
+                                            <p style="background-color:#1daf0d; color:White;">Stock suficiente. No se requiere pedido</p>
+                                        }
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("", "Edit",null, new { id=item.IdArticulo }, new { @class="bi bi-pencil-fill text-warning"}) |
+                                        @Html.ActionLink("", "Details",null, new { id=item.IdArticulo }, new { @class="bi bi-eye-fill text-primary"}) |
+                                        @Html.ActionLink("", "Delete",null, new { id=item.IdArticulo }, new { @class="bi bi-trash-fill text-danger"})
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+            <!--Fin tarjeta-->
+
+        </div>
+    </div>
+</div>
+<!--end page main-->
+
+
+

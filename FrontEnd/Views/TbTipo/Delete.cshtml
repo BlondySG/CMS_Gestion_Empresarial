@@ -1,0 +1,91 @@
+﻿@model FrontEnd.Models.TbTipoViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Soporte</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-wrench"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Tipo de Soporte</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--end breadcrumb-->
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Esta seguro que desea eliminar este Tipo de Soporte</h3>
+        <div>
+            <hr />
+
+            <!--Inicio tarjeta-->
+            <div class="card">
+                <h6 class="card-header mb-0 text-uppercase">Eliminar Tipo de Soporte</h6>
+                <div class="card-body">
+                    <div class="responsive">
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <dl class="row">
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.IdTipo)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.IdTipo)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.NombreSoporte)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.NombreSoporte)
+                                    </dd>
+                                </dl>
+
+                                <form asp-action="Delete" id="formulario" onsubmit="enviarFormulario(event)">
+                                    @Html.HiddenFor(model => model.IdTipo)
+                                    <input type="submit" value="Eliminar" class="btn btn-danger" @*onclick="AlertaBorrado()"*@ /> |
+                                    @Html.ActionLink("Regresar", "Index","TbTipo", null, new { @class="btn btn-primary"})
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Fin tarjeta-->
+
+                </div>
+            </div>
+        </div>
+        <!--end page main-->
+        @section Scripts{
+            <script>
+                function enviarFormulario(e) {
+                    e.preventDefault();
+                    Swal.fire({
+                        title: '¿Estás seguro?',
+                        text: "¡No podrás revertir esto!",
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        cancelButtonText: 'Cancelar',
+                        confirmButtonText: '¡Sí, bórralo!'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            const formulario = document.getElementById('formulario');
+                            formulario.submit();
+                            //Swal.fire(
+                            //    '¡Eliminado!',
+                            //    'Su archivo ha sido eliminado.',
+                            //    'success'
+                            //)
+                        }
+                    })
+                }
+            </script>
+        }

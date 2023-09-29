@@ -1,0 +1,91 @@
+﻿@model FrontEnd.Models.UserModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--start content-->
+<main class="authentication-content">
+    <div class="row justify-content-center">
+        <div class="col-sm-8 " >
+            <div class="card rounded-0 overflow-hidden shadow-none border mb-5 mb-lg-0">
+                <div class="row g-0">
+                    
+                    <div class="col-12 ">
+                        <div class="card-body p-4 p-sm-10">
+                            <div class="col-12 col-xl-12 order-xl-2 text-center mb-3">
+                                <img src="~/assets/images/logoCosermu_min.jpg" class="img-fluid logo" alt=""> 
+                            </div>
+                            <br />
+                            <h4 class="card-title text-center">Iniciar Sesión</h4>
+                           
+                            <form asp-action="Login">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="row g-3">
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label asp-for="UserName" class="form-label"></label>
+                                            <div class="ms-auto position-relative">
+                                                <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-person-fill"></i></div>
+                                                <input asp-for="UserName" type="text" class="form-control radius-30 ps-5" placeholder="Nombre Usuario" />
+                                            </div>
+                                            <span asp-validation-for="UserName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label asp-for="Password" class="form-label"></label>
+                                            <div class="ms-auto position-relative">
+                                                <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-lock-fill"></i></div>
+                                                <input asp-for="Password" type="password" class="form-control radius-30 ps-5" placeholder="Contraseña" />
+                                            </div>
+                                            <span asp-validation-for="Password" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <br />
+                                    <br />
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <div class="ms-auto position-relative">
+                                                <div class="position-absolute top-50 translate-middle-y search-icon px-3"><i class="bi bi-key-fill"></i></div>
+                                                <input type="text" id="captchaText" class="form-control radius-30 ps-5" placeholder="Captcha" onchange="chaeckCpatch(this.id);" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="imgCaptchaPlace"></div>
+
+                                    
+                                    <div class="col-12">
+                                        <div class="d-grid" id="acceder">
+                                            <input type="submit" value="Acceder" class="btn btn-primary radius-30" disabled/>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 text-center">
+                                        <p class="mb-0">¿Aún no tienes una cuenta? <a href="/Home/Register">Registrate aquí</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script src="~/assets/js/captchByAarif.js" type="text/javascript"></script>
+<!--end page main-->
+
+@section Scripts {
+    @{
+        //<partial name="_ValidationScriptsPartial" />
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

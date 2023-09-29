@@ -1,0 +1,42 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<!--start content-->
+<main class="page-content">
+
+    <div class="error-404 d-flex align-items-center justify-content-center">
+        <div class="container-fluid">
+            <div class="card py-5">
+                <div class="row g-0">
+                    <div class="col-xl-6">
+                        <div class="card-body p-4">
+                            <h1 class="display-1"><span class="text-warning">5</span><span class="text-danger">0</span><span class="text-primary">0</span></h1>
+                            <h2 class="font-weight-bold display-8">Lo siento, error inesperado</h2>
+                            <p>
+                                ¡Parece que estás perdido!
+                                <br>¡Puede ser que aún no estes registrado!
+                            </p>
+                            <div class="form-group">
+                            <div class="mt-5">
+                                <a href="@Url.ActionLink("login", "Home")" class="btn btn-lg btn-outline-primary px-md-4 radius-30">Ir a inicio</a>
+                                <br />
+                                <br />
+                                <a href="@Url.ActionLink("register", "Home")" class="btn btn-lg btn-outline-primary px-md-4 radius-30">Registrarse</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-6">
+                        <img src="~/assets/images/error/505-error.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <!--end row-->
+            </div>
+        </div>
+    </div>
+</main>
+<!--end page main-->

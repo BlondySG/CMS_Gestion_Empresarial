@@ -1,0 +1,162 @@
+﻿@model FrontEnd.Models.TbDatosCompraViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Facturación</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-cart-check"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Compras</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--end breadcrumb-->
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <!--Inicio tarjeta-->
+        <div class="card">
+            <h6 class="card-header mb-0 text-uppercase">Ingresar Compra</h6>
+            <div class="card-body">
+                <div class="responsive">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form asp-action="Create" method="post" id="formCompra" onsubmit="enviarFormulario(event)">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                @*<div class="form-group">
+                                <label asp-for="IdCompra" class="control-label"></label>
+                                <input asp-for="IdCompra" class="form-control" />
+                                <span asp-validation-for="IdCompra" class="text-danger"></span>
+                                </div>*@
+                                <div class="form-group">
+                                    <label asp-for="NumFacturaCompra" class="control-label"></label>
+                                    <input asp-for="NumFacturaCompra" class="form-control" />
+                                    <span asp-validation-for="NumFacturaCompra" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="IdProveedor" class="control-label"></label>
+                                    @Html.DropDownListFor(model => model.IdProveedor, new SelectList(Model.Proveedores, "IdProveedor", "NombreProveedor"), "--Seleccione--", new { @class="form-control"})
+                                    <span asp-validation-for="IdProveedor" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="IdArticulo" class="control-label"></label>
+                                    @Html.DropDownListFor(model => model.IdArticulo, new SelectList(Model.Articulos, "IdArticulo", "NombreArticulo"), "--Seleccione--", new { @class="form-control"})
+                                    <span asp-validation-for="IdArticulo" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Cantidad" class="control-label"></label>
+                                    <input asp-for="Cantidad" class="form-control" value="" id="cantidad" />
+                                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="PrecioUnitario" class="control-label"></label>
+                                    <input asp-for="PrecioUnitario" class="form-control" value="" id="precio-unitario" />
+                                    <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="ImpuestoCompra" class="control-label"></label>
+                                    <input asp-for="ImpuestoCompra" class="form-control" />
+                                    <span asp-validation-for="ImpuestoCompra" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="SubTotalCompra" class="control-label"></label>
+                                    <input asp-for="SubTotalCompra" class="form-control" readonly value="0" id="subtotal-compra" />
+                                    <span asp-validation-for="SubTotalCompra" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="TotalCompra" class="control-label"></label>
+                                    <input asp-for="TotalCompra" class="form-control" readonly value="0" id="total-compra" />
+                                    <span asp-validation-for="TotalCompra" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="FechaCompra" class="control-label"></label>
+                                    <input asp-for="FechaCompra" class="form-control" asp-format="{0:yyyy-MM-ddTHH:mm}" />
+                                    <span asp-validation-for="FechaCompra" class="text-danger"></span>
+                                </div>
+                                <br />
+                                <div class="form-group">
+                                    <input type="submit" value="Crear" class="btn btn-success" /> |
+                                    @Html.ActionLink("Regresar", "Index","TbDatosCompra", null, new { @class="btn btn-primary"})
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin tarjeta-->
+
+        </div>
+    </div>
+</div>
+<!--end page main-->
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+@*    <script>
+        const cantidadInput = document.getElementById('cantidad');
+        const precioUnitarioInput = document.getElementById('precio-unitario');
+        const impuestoCompraInput = document.getElementById('impuesto-compra');
+        const subtotalCompraInput = document.getElementById('subtotal-compra');
+        const totalCompraInput = document.getElementById('total-compra');
+
+        function updateCalculations() {
+            const cantidad = parseFloat(cantidadInput.value);
+            const precioUnitario = parseFloat(precioUnitarioInput.value);
+            const impuestoCompra = parseFloat(impuestoCompraInput.value);
+
+            // Calcular el SubTotalCompra
+            const subtotalCompra = cantidad * precioUnitario;
+            subtotalCompraInput.value = subtotalCompra.toFixed(2);
+
+            // Calcular el TotalCompra
+            const totalCompra = (cantidad * precioUnitario) * (1 + impuestoCompra);
+            totalCompraInput.value = totalCompra.toFixed(2);
+        }
+
+        cantidadInput.addEventListener('input', updateCalculations);
+        precioUnitarioInput.addEventListener('input', updateCalculations);
+        impuestoCompraInput.addEventListener('input', updateCalculations);
+
+        const form = document.querySelector('form');
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const cantidad = parseFloat(cantidadInput.value);
+            const precioUnitario = parseFloat(precioUnitarioInput.value);
+            const impuestoCompra = parseFloat(impuestoCompraInput.value);
+            const subtotalCompra = parseFloat(subtotalCompraInput.value);
+            const totalCompra = parseFloat(totalCompraInput.value);
+
+            if (isNaN(cantidad) || cantidad <= 0 || isNaN(precioUnitario) || precioUnitario <= 0 || isNaN(impuestoCompra) || impuestoCompra < 0) {
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Por favor, ingrese valores válidos para la cantidad, precio unitario e impuesto de compra.',
+                });
+                return;
+            }
+
+            await Swal.fire({
+                icon: 'success',
+                title: '¡Compra guardada!',
+                text: `Se ha guardado la compra con éxito. Cantidad: ${cantidad}, Precio Unitario: ${precioUnitario}, Impuesto de Compra: ${impuestoCompra}, Subtotal de Compra: ${subtotalCompra}, Total de Compra: ${totalCompra}`,
+            });
+
+            form.submit();
+        });
+    </script>*@
+  
+    }
+

@@ -1,0 +1,82 @@
+﻿@model FrontEnd.Models.TbBitacoraViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Bitacora</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-wrench"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Bitacora</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <!--Inicio tarjeta-->
+        <div class="card">
+            <h6 class="card-header mb-0 text-uppercase">Bitacoras</h6>
+            <div class="card-body">
+                <div class="responsive">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+          @*  <div class="form-group">
+                <label asp-for="IdTipo" class="control-label"></label>
+                <input asp-for="IdTipo" class="form-control" />
+                <span asp-validation-for="IdTipo" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                                    <label asp-for="CodError" class="control-label"></label>
+                                      <input asp-for="CodError" class="form-control" />
+                                    <span asp-validation-for="CodError" class="text-danger"></span>
+            </div>
+                                <div class="form-group">
+                                    <label asp-for="Descripcion" class="control-label"></label>
+                                    <input asp-for="Descripcion" class="form-control" />
+                                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                                </div>
+                                  <div class="form-group">
+                                    <label asp-for="FechaHora" class="control-label"></label>
+                                    <input asp-for="FechaHora" class="form-control asp-format=" {0:yyyy-MM-ddTHH:mm}"" />
+                                    <span asp-validation-for="FechaHora" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Origen" class="control-label"></label>
+                                    <input asp-for="Origen" class="form-control" />
+                                    <span asp-validation-for="Origen" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="IdEmpleado" class="control-label"></label>
+                                    <input asp-for="IdEmpleado" class="form-control" />
+                                    <span asp-validation-for="IdEmpleado" class="text-danger"></span>
+                                </div>
+                                <br />
+                                <div class="form-group">
+                                    <input type="submit" value="Crear" class="btn btn-success" /> |
+                                    @Html.ActionLink("Regresar", "Index","TbBitacora", null, new { @class="btn btn-primary"})
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin tarjeta-->
+
+        </div>
+    </div>
+
+<!--end page main-->
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

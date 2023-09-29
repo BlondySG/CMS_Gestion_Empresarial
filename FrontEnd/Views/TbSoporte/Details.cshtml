@@ -1,0 +1,96 @@
+﻿@model FrontEnd.Models.TbSoporteViewModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Soporte</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-tools"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Soporte</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--end breadcrumb-->
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <!--Inicio tarjeta-->
+        <div class="card">
+            <h6 class="card-header mb-0 text-uppercase">Ver Soporte</h6>
+            <div class="card-body">
+                <div class="responsive">
+                    <div class="row">
+                        <div class="col-md-8">
+                        <dl class="row">
+                            <dt class = "col-sm-2">
+                                @Html.DisplayNameFor(model => model.IdSoporte)
+                            </dt>
+                            <dd class = "col-sm-10">
+                                @Html.DisplayFor(model => model.IdSoporte)
+                            </dd>
+                            <dt class = "col-sm-2">
+                                @Html.DisplayNameFor(model => model.DescripcionSoporte)
+                            </dt>
+                            <dd class = "col-sm-10">
+                                @Html.DisplayFor(model => model.DescripcionSoporte)
+                            </dd>
+                            <dt class = "col-sm-2">
+                                @Html.DisplayNameFor(model => model.FechaAgendada)
+                            </dt>
+                            <dd class = "col-sm-10">
+                                @Html.DisplayFor(model => model.FechaAgendada)
+                            </dd>
+                            <dt class = "col-sm-2">
+                                @Html.DisplayNameFor(model => model.FechaCierreSoporte)
+                            </dt>
+                            <dd class = "col-sm-10">
+                                @Html.DisplayFor(model => model.FechaCierreSoporte)
+                            </dd>
+                            <dt class = "col-sm-2">
+                                @Html.DisplayNameFor(model => model.Estatus)
+                            </dt>
+                            <dd class = "col-sm-10">
+                                @Html.DisplayFor(model => model.Estatus)
+                            </dd>
+                            <dt class = "col-sm-2">
+                                @Html.DisplayNameFor(model => model.IdCliente)
+                            </dt>
+                            <dd class = "col-sm-10">
+                                @Html.DisplayFor(model => model.TbCliente.NombreCliente)
+                            </dd>
+                            <dt class = "col-sm-2">
+                                @Html.DisplayNameFor(model => model.IdEmpleado)
+                            </dt>
+                            <dd class = "col-sm-10">
+                                @Html.DisplayFor(model => model.TbEmpleado.Nombre)
+                            </dd>
+                            <dt class = "col-sm-2">
+                                @Html.DisplayNameFor(model => model.IdTipo)
+                            </dt>
+                            <dd class = "col-sm-10">
+                                @Html.DisplayFor(model => model.TbTipo.NombreSoporte)
+                            </dd>
+                        </dl>
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        @Html.ActionLink("Editar", "Edit", new { id = Model.IdSoporte }, new { @class="btn btn-warning"}) |
+                        @Html.ActionLink("Regresar", "Index","TbSoporte", null, new { @class="btn btn-primary"})
+                    </div>
+                    </div>
+            </div>
+            <!--Fin tarjeta-->
+        </div>
+    </div>
+</div>
+<!--end page main-->

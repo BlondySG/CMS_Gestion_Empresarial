@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{44DF63F5-5347-46A9-B3FE-5095B21C7957}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{C59C5BF2-1972-4CAC-A77D-98F1A1AC8229}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{6905F0E2-62DF-4A62-BC9F-45727CB0450E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd", "BackEnd\BackEnd.csproj", "{4EFC1237-6088-4ABE-9B82-52B757ADCB55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44DF63F5-5347-46A9-B3FE-5095B21C7957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44DF63F5-5347-46A9-B3FE-5095B21C7957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44DF63F5-5347-46A9-B3FE-5095B21C7957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44DF63F5-5347-46A9-B3FE-5095B21C7957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59C5BF2-1972-4CAC-A77D-98F1A1AC8229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59C5BF2-1972-4CAC-A77D-98F1A1AC8229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59C5BF2-1972-4CAC-A77D-98F1A1AC8229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59C5BF2-1972-4CAC-A77D-98F1A1AC8229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6905F0E2-62DF-4A62-BC9F-45727CB0450E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6905F0E2-62DF-4A62-BC9F-45727CB0450E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6905F0E2-62DF-4A62-BC9F-45727CB0450E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6905F0E2-62DF-4A62-BC9F-45727CB0450E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFC1237-6088-4ABE-9B82-52B757ADCB55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFC1237-6088-4ABE-9B82-52B757ADCB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFC1237-6088-4ABE-9B82-52B757ADCB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFC1237-6088-4ABE-9B82-52B757ADCB55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76DD569B-AF45-40A1-923B-ADBAF7CE79C1}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/bsoto50203
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Entities\\Entities.csproj
+		SccProjectName1 = Entities
+		SccLocalPath1 = Entities
+		SccProjectUniqueName2 = DAL\\DAL.csproj
+		SccProjectName2 = DAL
+		SccLocalPath2 = DAL
+		SccProjectUniqueName3 = FrontEnd\\FrontEnd.csproj
+		SccProjectName3 = FrontEnd
+		SccLocalPath3 = FrontEnd
+		SccProjectUniqueName4 = BackEnd\\BackEnd.csproj
+		SccProjectName4 = BackEnd
+		SccLocalPath4 = BackEnd
+	EndGlobalSection
+EndGlobal

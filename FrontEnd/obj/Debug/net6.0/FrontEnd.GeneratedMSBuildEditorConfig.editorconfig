@@ -1,0 +1,293 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FrontEnd
+build_property.RootNamespace = FrontEnd
+build_property.ProjectDir = C:\Users\blond\source\repos\Workspaces\CMS_Gestion_Empresarial\FrontEnd\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\blond\source\repos\Workspaces\CMS_Gestion_Empresarial\FrontEnd
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Home/Forgot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jnb3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Shared/_AuthLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Shared/_NotificationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbArticulos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJBcnRpY3Vsb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbArticulos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJBcnRpY3Vsb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbArticulos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJBcnRpY3Vsb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbArticulos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJBcnRpY3Vsb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbArticulos/GraficoBarra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJBcnRpY3Vsb3NcR3JhZmljb0JhcnJhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbArticulos/GraficoPie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJBcnRpY3Vsb3NcR3JhZmljb1BpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbArticulos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJBcnRpY3Vsb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbBitacora/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJCaXRhY29yYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbBitacora/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJCaXRhY29yYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbClientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDbGllbnRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbClientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDbGllbnRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbClientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDbGllbnRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbClientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDbGllbnRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbClientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDbGllbnRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosCompra/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc0NvbXByYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosCompra/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc0NvbXByYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosCompra/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc0NvbXByYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosCompra/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc0NvbXByYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosCompra/Grafico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc0NvbXByYVxHcmFmaWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosCompra/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc0NvbXByYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosVenta/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc1ZlbnRhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosVenta/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc1ZlbnRhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosVenta/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc1ZlbnRhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosVenta/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc1ZlbnRhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosVenta/GraficoLinea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc1ZlbnRhXEdyYWZpY29MaW5lYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbDatosVenta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJEYXRvc1ZlbnRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbEmpleado/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJFbXBsZWFkb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbEmpleado/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJFbXBsZWFkb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbEmpleado/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJFbXBsZWFkb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbEmpleado/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJFbXBsZWFkb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbEmpleado/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJFbXBsZWFkb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbProveedor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJQcm92ZWVkb3JcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbProveedor/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJQcm92ZWVkb3JcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbProveedor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJQcm92ZWVkb3JcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbProveedor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJQcm92ZWVkb3JcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbProveedor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJQcm92ZWVkb3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbRol/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJSb2xcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbRol/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJSb2xcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbRol/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJSb2xcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbRol/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJSb2xcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbRol/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJSb2xcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporteCliente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlQ2xpZW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporteCliente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlQ2xpZW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporteCliente/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlQ2xpZW50ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporteCliente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlQ2xpZW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporteCliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporte/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporte/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporte/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporte/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbSoporte/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTb3BvcnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbTipo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJUaXBvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbTipo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJUaXBvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbTipo/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJUaXBvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbTipo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJUaXBvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/TbTipo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJUaXBvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blond/source/repos/Workspaces/CMS_Gestion_Empresarial/FrontEnd/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-709v5g0hbe

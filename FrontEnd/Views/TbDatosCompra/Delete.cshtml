@@ -1,0 +1,142 @@
+﻿@model FrontEnd.Models.TbDatosCompraViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Facturación</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-cart-check"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Compras</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--end breadcrumb-->
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Esta seguro que desea eliminar esta compra?</h3>
+        <div>
+            <hr />
+
+            <!--Inicio tarjeta-->
+            <div class="card">
+                <h6 class="card-header mb-0 text-uppercase">Eliminar Compra</h6>
+                <div class="card-body">
+                    <div class="responsive">
+
+                        <div class="row">
+                            <div class="col-md-8">
+
+                                <dl class="row">
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.IdCompra)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.IdCompra)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.NumFacturaCompra)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.NumFacturaCompra)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.IdProveedor)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.TbProveedor.NombreProveedor)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.IdArticulo)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.TbArticulo.NombreArticulo)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.Cantidad)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.Cantidad)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.PrecioUnitario)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.PrecioUnitario)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.ImpuestoCompra)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.ImpuestoCompra)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.SubTotalCompra)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.SubTotalCompra)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.TotalCompra)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.TotalCompra)
+                                    </dd>
+                                    <dt class="col-sm-2">
+                                        @Html.DisplayNameFor(model => model.FechaCompra)
+                                    </dt>
+                                    <dd class="col-sm-10">
+                                        @Html.DisplayFor(model => model.FechaCompra)
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <form asp-action="Delete" id="formulario" onsubmit="enviarFormulario(event)">
+                            @Html.HiddenFor(model => model.IdCompra)
+                            <input type="submit" value="Eliminar" class="btn btn-danger" @*onclick="AlertaBorrado()"*@ /> |
+                            @Html.ActionLink("Regresar", "Index","TbDatosCompra", null, new { @class="btn btn-primary"})
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!--Fin tarjeta-->
+
+        </div>
+    </div>
+</div>
+<!--end page main-->
+@section Scripts{
+    <script>
+        function enviarFormulario(e) {
+            e.preventDefault();
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: "¡No podrás revertir esto!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                cancelButtonText: 'Cancelar',
+                confirmButtonText: '¡Sí, bórralo!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    const formulario = document.getElementById('formulario');
+                    formulario.submit();
+                    //Swal.fire(
+                    //    '¡Eliminado!',
+                    //    'Su archivo ha sido eliminado.',
+                    //    'success'
+                    //)
+                }
+            })
+        }
+    </script>
+    }

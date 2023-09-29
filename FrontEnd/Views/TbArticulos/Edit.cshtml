@@ -1,0 +1,127 @@
+﻿@model FrontEnd.Models.TbArticulosViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Gestión</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-box-seam"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Artículos</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--end breadcrumb-->
+
+
+
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <!--Inicio tarjeta-->
+        <div class="card">
+            <h6 class="card-header mb-0 text-uppercase">Editar Artículo</h6>
+            <div class="card-body">
+                <div class="responsive">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form asp-action="Edit">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group">
+                                    <label asp-for="IdArticulo" class="control-label"></label>
+                                    <input asp-for="IdArticulo" class="form-control" readonly />
+                                    <span asp-validation-for="IdArticulo" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="NombreArticulo" class="control-label"></label>
+                                    <input asp-for="NombreArticulo" class="form-control" />
+                                    <span asp-validation-for="NombreArticulo" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Descripcion" class="control-label"></label>
+                                    <input asp-for="Descripcion" class="form-control" />
+                                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Cantidad" class="control-label"></label>
+                                    <input asp-for="Cantidad" class="form-control" />
+                                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="CostoArticulo" class="control-label"></label>
+                                    <input asp-for="CostoArticulo" class="form-control" />
+                                    <span asp-validation-for="CostoArticulo" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="PuntoReorden" class="control-label"></label>
+                                    <input asp-for="PuntoReorden" class="form-control" />
+                                    <span asp-validation-for="PuntoReorden" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="NumPlaca" class="control-label"></label>
+                                    <input asp-for="NumPlaca" class="form-control" />
+                                    <span asp-validation-for="NumPlaca" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="NumParte" class="control-label"></label>
+                                    <input asp-for="NumParte" class="form-control" />
+                                    <span asp-validation-for="NumParte" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="NumSerie" class="control-label"></label>
+                                    <input asp-for="NumSerie" class="form-control" />
+                                    <span asp-validation-for="NumSerie" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="VidaUtil" class="control-label"></label>
+                                    <input asp-for="VidaUtil" class="form-control" />
+                                    <span asp-validation-for="VidaUtil" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="FechaFinGarantia" class="control-label"></label>
+                                    <input asp-for="FechaFinGarantia" class="form-control" />
+                                    <span asp-validation-for="FechaFinGarantia" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Idproveedor" class="control-label"></label>
+                                    @Html.DropDownListFor(model => model.Idproveedor, new SelectList(Model.Proveedores, "IdProveedor", "NombreProveedor"), "--Seleccione Proveedor--", new { @class="form-control"})
+                                    <span asp-validation-for="Idproveedor" class="text-danger"></span>
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" asp-for="Activo" /> @Html.DisplayNameFor(model => model.Activo)
+                                    </label>
+                                </div>
+                                <br />
+                                <div class="form-group">
+                                    <input type="submit" value="Guardar" class="btn btn-info" /> |
+                                    @Html.ActionLink("Regresar", "Index","TbArticulos", null, new { @class="btn btn-primary"})
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin tarjeta-->
+
+        </div>
+    </div>
+</div>
+@*
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

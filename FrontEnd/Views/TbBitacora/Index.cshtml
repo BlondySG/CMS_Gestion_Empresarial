@@ -1,0 +1,91 @@
+﻿@model IEnumerable<FrontEnd.Models.TbBitacoraViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Soporte</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-wrench"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Bitacora</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--end breadcrumb-->
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <!--Inicio tarjeta-->
+        <div class="card">
+            <h6 class="card-header mb-0 text-uppercase">Bitacoras</h6>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <p>
+                        <a asp-action="Create"><button class="btn btn-success">Lista Bitacoras</button></a>
+                    </p>
+
+                    <table id="dataTable" class="table table-striped" table-bordered>
+                        <thead class="table-dark">
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IdBitacora)
+                                </th>
+                                <th>
+                                    <p>Identificador</p>
+                                </th>
+                                 <th>
+                                    @Html.DisplayNameFor(model => model.Descripcion )
+                                </th>
+                                 <th>
+                                    @Html.DisplayNameFor(model => model.FechaHora)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Origen)
+                                </th>
+                              
+                        
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IdBitacora)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CodError)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Descripcion)
+                                    </td>
+                                     <td>
+                                        @Html.DisplayFor(modelItem => item.FechaHora)
+                                    </td>
+                                     <td>
+                                        @Html.DisplayFor(modelItem => item.Origen)
+                                    </td>
+                                   
+                                  
+
+                                   
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--Fin tarjeta-->
+
+        </div>
+    </div>
+</div>
+<!--end page main-->

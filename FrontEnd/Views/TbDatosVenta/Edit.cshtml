@@ -1,0 +1,108 @@
+﻿@model FrontEnd.Models.TbDatosVentaViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Facturación</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-bag-check"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Ventas</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--end breadcrumb-->
+<div class="row">
+    <div class="col-sm-12">
+
+        <!--Inicio tarjeta-->
+        <div class="card">
+            <h6 class="card-header mb-0 text-uppercase">Editar Ventas</h6>
+            <div class="card-body">
+                <div class="responsive">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form asp-action="Edit">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group">
+                                    <label asp-for="IdVenta" class="control-label"></label>
+                                    <input asp-for="IdVenta" class="form-control" readonly />
+                                    <span asp-validation-for="IdVenta" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="NumFacturaVenta" class="control-label"></label>
+                                    <input asp-for="NumFacturaVenta" class="form-control" />
+                                    <span asp-validation-for="NumFacturaVenta" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="FechaCompra" class="control-label"></label>
+                                    <input asp-for="FechaCompra" class="form-control" />
+                                    <span asp-validation-for="FechaCompra" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Cantidad" class="control-label"></label>
+                                    <input asp-for="Cantidad" class="form-control" />
+                                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="PrecioUnitario" class="control-label"></label>
+                                    <input asp-for="PrecioUnitario" class="form-control" />
+                                    <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="ImpuestoVenta" class="control-label"></label>
+                                    <input asp-for="ImpuestoVenta" class="form-control" />
+                                    <span asp-validation-for="ImpuestoVenta" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="SubTotalVenta" class="control-label"></label>
+                                    <input asp-for="SubTotalVenta" class="form-control" readonly />
+                                    <span asp-validation-for="SubTotalVenta" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="TotalVenta" class="control-label"></label>
+                                    <input asp-for="TotalVenta" class="form-control" readonly />
+                                    <span asp-validation-for="TotalVenta" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="FechaVenta" class="control-label"></label>
+                                    <input asp-for="FechaVenta" class="form-control" />
+                                    <span asp-validation-for="FechaVenta" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="IdArticulo" class="control-label"></label>
+                                    @Html.DropDownListFor(model => model.IdArticulo, new SelectList(Model.Articulos, "IdArticulo", "NombreArticulo"), "--Select--", new { @class="form-control"})
+                                    <span asp-validation-for="IdArticulo" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="IdCliente" class="control-label"></label>
+                                    @Html.DropDownListFor(model => model.IdCliente, new SelectList(Model.Clientes, "IdCliente", "NombreCliente"), "--Select--", new { @class="form-control"})
+                                    <span asp-validation-for="IdCliente" class="text-danger"></span>
+                                </div>
+                                <br />
+                                <div class="form-group">
+                                    <input type="submit" value="Guardar" class="btn btn-info" /> |
+                                    @Html.ActionLink("Regresar", "Index","TbDatosVenta", null, new { @class="btn btn-primary"})
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin tarjeta-->
+
+        </div>
+    </div>
+</div>
+<!--end page main-->
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

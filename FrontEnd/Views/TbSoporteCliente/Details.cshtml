@@ -1,0 +1,69 @@
+﻿@model FrontEnd.Models.TbSoporteClienteViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+    <div class="breadcrumb-title pe-3">Soporte</div>
+    <div class="ps-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item">
+                    <a href="javascript:;"><i class="bi bi-file-earmark-spreadsheet"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Soporte</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--end breadcrumb-->
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <!--Inicio tarjeta-->
+        <div class="card">
+            <h6 class="card-header mb-0 text-uppercase">Detalle Soporte Clientes</h6>
+            <div class="card-body">
+                <div class="responsive">
+
+
+                    <div class="row">
+                        <div class="col-md-8">
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdSoporteCliente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdSoporteCliente)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdSoporte)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TbSoporte.DescripcionSoporte)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdCliente)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TbClientes.NombreCliente)
+        </dd>
+    </dl>
+</div>
+
+</div>
+                    <br />
+                    <div>
+                        @Html.ActionLink("Editar", "Edit", new { id = Model.IdSoporteCliente }, new { @class="btn btn-warning"}) |
+                        @Html.ActionLink("Regresar", "Index","TbSoporteCliente", null, new { @class="btn btn-primary"})
+                    </div>
+
+                </div>
+            </div>
+            <!--Fin tarjeta-->
+
+        </div>
+    </div>
+</div>
